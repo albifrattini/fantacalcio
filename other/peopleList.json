@@ -1,0 +1,34 @@
+[
+	{
+		"ownerId": "1",
+		"name": "Alberto"
+	},
+	{
+		"ownerId": "2",
+		"name": "Stefano"
+	},
+	{
+		"ownerId": "3",
+		"name": "Damjano"
+	},
+	{
+		"ownerId": "4",
+		"name": "Gabriele"
+	},
+	{
+		"ownerId": "5",
+		"name": "Giacomo"
+	},
+	{
+		"ownerId": "6",
+		"name": "Carlo"
+	},
+	{
+		"ownerId": "7",
+		"name": "Andrea"
+	},
+	{
+		"ownerId": "8",
+		"name": "Matteo"
+	}
+]

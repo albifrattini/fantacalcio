@@ -1,0 +1,17 @@
+{
+  "name": "fantacalcio",
+  "version": "1.0.0",
+  "description": "This is the directory for the web page used for Fantacalcio",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "author": "Alberto Frattini",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.19.3",
+    "pg": "^7.12.1"
+  }
+}
