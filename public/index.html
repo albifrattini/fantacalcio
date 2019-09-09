@@ -1,20 +1,102 @@
-<html>
+<!DOCTYPE html>
+<html lang="us">
+
+
+
+
+
   <head>
-          <title>Book store</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fantacalcio</title>
   </head>
+
+
+
+
+
+
+
   <body>
-          <h1>Our first server!</h1>
-          <ul></ul>
-         <script>       
-                 fetch('v2/books').then(function(response) {
-                         return response.json();
-                 }).then(function(json) {
-                        for(let i = 0; i< json.length; i++) {
-                           let listItem = document.createElement("li");
-                           let { title, author, price } = json[i];
-                                listItem.innerHTML = `${title} - ${author} - ${price.value}`;
-                           document.querySelector("ul").append(listItem);
-                        }
-                 });
-</script>
+
+  	<div class="modal" id="addPlayerModal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+
+	      <div class="modal-header">
+	        <h4 class="modal-title">Nuovo giocatore da aggiungere:</h4>
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+
+	      <!-- Modal body -->
+	      <div class="modal-body">
+	        <form>
+			  <div class="form-group">
+			    <label for="playerName">Nome giocatore</label>
+			    <input type="text" class="form-control" id="playerName" placeholder="Lukaku, Cristiano Ronaldo, Piatek, ecc...">
+			  </div>
+			  <div class="form-group">
+			    <label for="roleSelector">Scegli un ruolo</label>
+			    <select class="form-control" id="roleSelector">
+			      <option>Portiere</option>
+			      <option>Difensore</option>
+			      <option>Centrocampista</option>
+			      <option>Attaccante</option>
+			    </select>
+			  </div>
+			  <div class="form-group">
+			    <label for="ownerSelector">Scegli il proprietario</label>
+			    <select class="form-control" id="ownerSelector">
+			      <option value="1">Alberto</option>
+			      <option value="2">Stefano</option>
+			      <option value="4">Gabriele</option>
+			      <option value="8">Matteo</option>
+			      <option value="5">Giacomo</option>
+			      <option value="7">Andrea</option>
+			      <option value="3">Damjano</option>
+			      <option value="6">Carlo</option>
+			    </select>
+			  </div>
+			  <div class="form-group">
+			    <label for="priceInput">Prezzo</label>
+			    <input type="number" class="form-control" id="priceInput" placeholder="Inserisci il prezzo..." min="0" step="1">
+			  </div>
+			</form>
+	      </div>
+
+	      <div class="modal-footer">
+	        <button type="button" onclick="addPlayer()" class="btn btn-danger" data-dismiss="modal">Aggiungi</button>
+	      </div>
+
+	    </div>
+	  </div>
+	</div>
+
+    <div class="container-fluid">
+    	<div class="container-fluid">
+		    <div class="row">
+		    	<div class="col-md-10">
+		    		<h1>Il Fanta</h1>
+		    	</div>
+		    	<div class="col-md-2">
+		    		<h3><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addPlayerModal">Aggiungi Giocatore</button></h3>
+		    	</div>
+		    </div>
+	    </div>
+	    <div class="container-fluid">
+		    <div class="row" id="people-players"></div>
+	    </div>
+  	</div>
+
+  	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  	<script type="text/javascript" src="assets/js/home.js"></script>
   </body>
+
+</html>
