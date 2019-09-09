@@ -30,15 +30,15 @@ function disposePlayers(player) {
 		$(`#portieri-${player.ownerName}`).append(
 			`
 				<div class="row">
-					<div class="col-md-2">
+					<div class="col-md-2 col-sm-2 col-xs-2">
 						<button class="btn" onclick="deletePlayer(this.id)" id="${player.playerName}">
     						<span class="glyphicon glyphicon-trash" style="color: lightgray;"></span>
   						</button>
 					</div>
-					<div class="col-md-7">
+					<div class="col-md-7 col-sm-7 col-xs-7">
 						<h5>${player.playerName}</h5>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3 col-xs-3">
 						<h5>${player.price}</h5>
 					</div>
 				</div>
@@ -48,15 +48,15 @@ function disposePlayers(player) {
 		$(`#difensori-${player.ownerName}`).append(
 			`
 				<div class="row">
-					<div class="col-md-2">
+					<div class="col-md-2 col-sm-2 col-xs-2">
 						<button class="btn" onclick="deletePlayer(this.id)" id="${player.playerName}">
     						<span class="glyphicon glyphicon-trash" style="color: lightgray;"></span>
   						</button>
 					</div>
-					<div class="col-md-7">
+					<div class="col-md-7 col-sm-7 col-xs-7">
 						<h5>${player.playerName}</h5>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3 col-xs-3">
 						<h5>${player.price}</h5>
 					</div>
 				</div>
@@ -66,15 +66,15 @@ function disposePlayers(player) {
 		$(`#centrocampisti-${player.ownerName}`).append(
 			`
 				<div class="row">
-					<div class="col-md-2">
+					<div class="col-md-2 col-sm-2 col-xs-2">
 						<button class="btn" onclick="deletePlayer(this.id)" id="${player.playerName}">
     						<span class="glyphicon glyphicon-trash" style="color: lightgray;"></span>
   						</button>
 					</div>
-					<div class="col-md-7">
+					<div class="col-md-7 col-sm-7 col-xs-7">
 						<h5>${player.playerName}</h5>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3 col-xs-3">
 						<h5>${player.price}</h5>
 					</div>
 				</div>
@@ -84,15 +84,15 @@ function disposePlayers(player) {
 		$(`#attaccanti-${player.ownerName}`).append(
 			`
 				<div class="row">
-					<div class="col-md-2">
+					<div class="col-md-2 col-sm-2 col-xs-2">
 						<button class="btn" onclick="deletePlayer(this.id)" id="${player.playerName}">
     						<span class="glyphicon glyphicon-trash" style="color: lightgray;"></span>
   						</button>
 					</div>
-					<div class="col-md-7">
+					<div class="col-md-7 col-sm-7 col-xs-7">
 						<h5>${player.playerName}</h5>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3 col-xs-3">
 						<h5>${player.price}</h5>
 					</div>
 				</div>
