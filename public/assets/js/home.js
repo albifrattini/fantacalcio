@@ -28,7 +28,7 @@ function disposePlayers(player) {
 			`
 				<div class="row">
 					<div class="col-md-2 col-sm-2 col-xs-2">
-						<button class="btn" onclick="deletePlayer(this.id)" id="${player.playerName}">
+						<button class="btn" ondblclick="deletePlayer(this.id)" id="${player.playerName}">
     						<span class="glyphicon glyphicon-trash" style="color: lightgray;"></span>
   						</button>
 					</div>
@@ -46,7 +46,7 @@ function disposePlayers(player) {
 			`
 				<div class="row">
 					<div class="col-md-2 col-sm-2 col-xs-2">
-						<button class="btn" onclick="deletePlayer(this.id)" id="${player.playerName}">
+						<button class="btn" ondblclick="deletePlayer(this.id)" id="${player.playerName}">
     						<span class="glyphicon glyphicon-trash" style="color: lightgray;"></span>
   						</button>
 					</div>
@@ -64,7 +64,7 @@ function disposePlayers(player) {
 			`
 				<div class="row">
 					<div class="col-md-2 col-sm-2 col-xs-2">
-						<button class="btn" onclick="deletePlayer(this.id)" id="${player.playerName}">
+						<button class="btn" ondblclick="deletePlayer(this.id)" id="${player.playerName}">
     						<span class="glyphicon glyphicon-trash" style="color: lightgray;"></span>
   						</button>
 					</div>
@@ -82,7 +82,7 @@ function disposePlayers(player) {
 			`
 				<div class="row">
 					<div class="col-md-2 col-sm-2 col-xs-2">
-						<button class="btn" onclick="deletePlayer(this.id)" id="${player.playerName}">
+						<button class="btn" ondblclick="deletePlayer(this.id)" id="${player.playerName}">
     						<span class="glyphicon glyphicon-trash" style="color: lightgray;"></span>
   						</button>
 					</div>
