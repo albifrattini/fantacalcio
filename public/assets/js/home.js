@@ -1,22 +1,19 @@
 var budgetAvailable = {};
 
-function getPeople() {
+function getData() {
 	fetch('/v2/people')
 		.then(function (response) {
 			return response.json();
 		})
 		.then(function (people) {
 			people.map(disposePeople);
-		});
-}
-
-function getPlayers() {
-	fetch('/v2/players')
-		.then(function (response) {
-			return response.json();
-		})
-		.then(function (players) {
-			players.map(disposePlayers);
+			fetch('/v2/players')
+				.then(function (response) {
+					return response.json();
+				})
+				.then(function (players) {
+					players.map(disposePlayers);
+				});
 		});
 }
 
@@ -174,6 +171,4 @@ function deletePlayer(plName) {
 	location.reload();
 }
 
-
-getPeople();
-getPlayers();
+getData();
