@@ -6,6 +6,44 @@
 
 
   <head>
+  	<style>
+  	div.polaroid {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 20px;
+		background-color: white;
+	}
+	button.deleteButton {
+		border: none;
+		background-color: white;
+		color: gray; 
+		padding: 10px;
+		text-align: center;
+		-webkit-transition-duration: 0.4s;
+	    transition-duration: 0.4s;
+	    display: inline-block;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	button.addButton {
+		border: none;
+		background-color: #0C6291;
+		color: white; 
+		font-size: 16px;
+		padding: 16px;
+		text-align: center;
+	    opacity: 0.7;
+	    transition: 0.3s;
+	    display: inline-block;
+		text-decoration: none;
+		cursor: pointer;
+		border-radius: 25px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	button.addButton:hover {opacity: 1;}
+	button.deleteButton:hover {
+		color: #f44336;
+	}
+	</style>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -21,14 +59,13 @@
 
 
 
-  <body>
+  <body style="background-color: #FAFAFA">
 
   	<div class="modal" id="addPlayerModal">
 	  <div class="modal-dialog">
 	    <div class="modal-content">
 
 	      <div class="modal-header">
-	        <h4 class="modal-title">Nuovo giocatore da aggiungere:</h4>
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
 	      </div>
 
@@ -69,7 +106,7 @@
 	      </div>
 
 	      <div class="modal-footer">
-	        <button type="button" onclick="addPlayer()" class="btn btn-danger" data-dismiss="modal">Aggiungi</button>
+	        <button type="button" onclick="addPlayer()" class="addButton" style="padding: 8px 16px;" data-dismiss="modal">Aggiungi</button>
 	      </div>
 
 	    </div>
@@ -78,12 +115,12 @@
 
     <div class="container-fluid">
     	<div class="container-fluid">
-		    <div class="row">
+		    <div class="row" style="padding: 30px;">
 		    	<div class="col-md-10 col-sm-10 col-xs-10">
-		    		<h1>ilFanta TraDaNui</h1>
+		    		<img src="./assets/img/fanta.png" alt="Logo Fantacalcio">
 		    	</div>
 		    	<div class="col-md-2 col-sm-2 col-xs-2">
-		    		<h3><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addPlayerModal">Aggiungi Giocatore</button></h3>
+		    		<h3><button type="button" class="addButton" data-toggle="modal" data-target="#addPlayerModal">Aggiungi Giocatore</button></h3>
 		    	</div>
 		    </div>
 	    </div>
